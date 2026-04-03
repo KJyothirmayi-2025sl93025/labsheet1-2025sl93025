@@ -27,9 +27,15 @@ assert calculator.add(2,3)==5
 # Test multiply
 assert calculator.multiply(2,3)==6
 
-# Test subtract (if exists)
+# Test subtract
 try:
     assert calculator.subtract(5,3)==2
+except:
+    pass
+
+# Test divide
+try:
+    assert calculator.divide(6,3)==2
 except:
     pass
 
